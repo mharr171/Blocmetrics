@@ -13,3 +13,42 @@
  *= require_tree .
  *= require_self
  */
+$menu_background: #ddd;
+
+
+.container {
+  margin: 0 auto;
+  min-width: 800px;
+  max-width: 1200px;
+  // background-color: pink;
+  padding: 20px 20px 50px 20px;
+}
+
+.pure-menu {
+  background-color: $menu_background;
+}
+
+.pure-menu-item a {
+  margin: 0 15px;
+}
+
+a:link  {
+  /* Applies to all unvisited links */
+  text-decoration:  none;
+  color:            inherit;
+}
+a:visited {
+  /* Applies to all visited links */
+  text-decoration:  none;
+  color:            inherit;
+}
+a:hover {
+  /* Applies to links under the pointer */
+  text-decoration:  underline;
+  color:            inherit;
+}
+a:active  {
+  /* Applies to activated links */
+  text-decoration:  underline;
+  color: 						white;
+}

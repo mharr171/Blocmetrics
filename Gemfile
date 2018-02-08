@@ -55,3 +55,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 gem 'pg', '~> 0.18', group: [:production, :staging]
+
+# https://github.com/plataformatec/devise
+gem 'devise'
