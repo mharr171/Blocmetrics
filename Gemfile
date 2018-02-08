@@ -58,3 +58,5 @@ gem 'pg', '~> 0.18', group: [:production, :staging]
 
 # https://github.com/plataformatec/devise
 gem 'devise'
+
+gem 'figaro', '1.0'
