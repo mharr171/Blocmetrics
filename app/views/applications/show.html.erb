@@ -1,7 +1,7 @@
 <% if @application %>
   <h1><%= @application.name %></h1>
-  <h4></h4><%= @application.url %></h4>
-
+  <h4>URL: <%= link_to @application.url, @application.url %></h4>
+  <br />
 
   <%= link_to edit_application_path(@application), class:'hover-green' do %>
   <i class="fal fa-xs fa-pencil"></i>
@@ -10,6 +10,11 @@
   <%= link_to application_path(@application), method: :delete, class:'hover-red' do %>
   <i class="fal fa-xs fa-trash"></i>
   <% end %>
+  <br />
+
+  <h3>Events</h3>
+  <%= render '/events/events' %>
+
 
   <br />
   <div class="bottom-navigation">

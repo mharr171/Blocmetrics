@@ -7,6 +7,7 @@ class ApplicationsController < ApplicationController
 
   def show
     @application = nil if @application.user != current_user
+    @events = @application.events.group_by(&:name) if @application
   end
 
   def new

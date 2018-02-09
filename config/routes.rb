@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'events/new'
+
+  get 'events/create'
+
+  get 'events/edit'
+
+  get 'events/update'
+
+  get 'events/destroy'
+
   devise_for :users, controllers: { registrations: 'registrations' }
   root 'welcome#index'
 

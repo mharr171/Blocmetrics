@@ -60,3 +60,5 @@ gem 'pg', '~> 0.18', group: [:production, :staging]
 gem 'devise'
 
 gem 'figaro', '1.0'
+
+gem 'faker'

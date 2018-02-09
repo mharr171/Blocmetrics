@@ -1,0 +1,16 @@
+<table class='pure-table'>
+  <thead>
+    <tr>
+      <th class='width-2'>Name</th>
+      <th class='width-1 center'>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @events.each do |group, g| %>
+    <tr>
+      <td><%= group %></td>
+      <td class='center'><%= g.count %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
