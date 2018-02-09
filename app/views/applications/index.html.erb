@@ -1,0 +1,28 @@
+<h1>My Applications</h1>
+
+<%= link_to 'New application', new_application_path, class:'pure-button' %>
+
+<table class="pure-table pure-table-striped">
+  <thead>
+    <tr>
+      <th>Application Name</th>
+      <th>Controls</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @applications.sort_by{|a|a.updated_at}.reverse.each do |application| %>
+    <tr>
+      <td><%= link_to application.name, application_path(application) %></td>
+      <td class="center">
+        <%= link_to edit_application_path(application), class:'hover-green' do %>
+        <i class="fal fa-xs fa-pencil"></i>
+        <% end %>
+
+        <%= link_to application_path(application), method: :delete, class:'hover-red' do %>
+        <i class="fal fa-xs fa-trash"></i>
+        <% end %>
+      </td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>

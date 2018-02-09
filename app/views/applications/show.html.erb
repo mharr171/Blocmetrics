@@ -1,0 +1,20 @@
+<% if @application %>
+  <h1><%= @application.name %></h1>
+  <h4></h4><%= @application.url %></h4>
+
+
+  <%= link_to edit_application_path(@application), class:'hover-green' do %>
+  <i class="fal fa-xs fa-pencil"></i>
+  <% end %>
+
+  <%= link_to application_path(@application), method: :delete, class:'hover-red' do %>
+  <i class="fal fa-xs fa-trash"></i>
+  <% end %>
+
+  <br />
+  <div class="bottom-navigation">
+    <%= link_to "Back", applications_path, class:'pure-button' %>
+  </div>
+<% else %>
+  <%= render 'notfound' %>
+<% end %>

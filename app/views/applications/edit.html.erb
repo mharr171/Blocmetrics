@@ -1,0 +1,9 @@
+<h1>Editing <%= @application.name %></h1>
+
+<%= render partial: 'form', locals: { application: @application } %>
+
+<br />
+
+<div class="bottom-navigation">
+  <%= link_to "Cancel", application_path(@application), class:'pure-button' %>
+</div>

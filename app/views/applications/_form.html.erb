@@ -1,0 +1,7 @@
+<%= form_for [application], html: {class: "pure-form pure-form-stacked"} do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, placeholder: "Enter application name" %>
+  <%= f.label :url %>
+  <%= f.text_field :url, placeholder: "Enter application URL" %>
+  <%= f.submit "Create", class: 'pure-button pure-button-primary' %>
+<% end %>

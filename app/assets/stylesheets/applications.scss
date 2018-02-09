@@ -1,0 +1,59 @@
+// Place all the styles related to the Applications controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.hover-green:hover {
+  color: green;
+}
+
+.hover-red:hover {
+  color: red;
+}
+
+.bottom-navigation {
+  margin: 20px 0;
+}
+
+.center {
+  text-align: center;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.pure-button.button-success,
+.pure-button.button-error,
+.pure-button.button-warning,
+.pure-button.button-secondary {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.pure-button.button-success {
+  background: rgb(28, 184, 65); /* this is a green */
+}
+
+.pure-button.button-error {
+  background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.pure-button.button-warning {
+  background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.pure-button.button-secondary {
+  background: rgb(66, 184, 221); /* this is a light blue */
+}
