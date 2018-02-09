@@ -8,6 +8,10 @@ class ApplicationsController < ApplicationController
   def show
     @application = nil if @application.user != current_user
     @events = @application.events.group_by(&:name) if @application
+    @event_count = 0
+    @events.each do |group, g|
+      @event_count += g.count
+    end
   end
 
   def new
