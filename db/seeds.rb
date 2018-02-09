@@ -47,12 +47,13 @@ events = []
 end
 
 applications.each do |application|
-  5.times do
+  25.times do
     e = events.sample
     event = Event.new(
       name: e
     )
     event.application = application
+    event.created_at = (rand*10).days.ago
     puts '.' if event.save
   end
 end
